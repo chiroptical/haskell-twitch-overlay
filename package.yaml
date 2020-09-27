@@ -1,6 +1,6 @@
-name:                haskell-twitch-overlay
+name:                pluto
 version:             0.1.0.0
-github:              "chiroptical/haskell-twitch-overlay"
+github:              "chiroptical/pluto"
 license:             BSD3
 author:              "Barry Moore II"
 maintainer:          "chiroptical@gmail.com"
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/chiroptical/haskell-twitch-overlay#readme>
+description:         Please see the README on GitHub at <https://github.com/chiroptical/pluto#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -53,7 +53,7 @@ library:
   source-dirs: src
 
 executables:
-  haskell-twitch-overlay-exe:
+  pluto-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -62,10 +62,10 @@ executables:
     - -with-rtsopts=-N
     - -Wall
     dependencies:
-    - haskell-twitch-overlay
+    - pluto
 
 tests:
-  haskell-twitch-overlay-test:
+  pluto-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -74,4 +74,4 @@ tests:
     - -with-rtsopts=-N
     - -Wall
     dependencies:
-    - haskell-twitch-overlay
+    - pluto

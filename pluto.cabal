@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dfc1826f3bc9badf4273d9b479a78e23befbd41959d2b7f26690aff911ceec5e
+-- hash: 40df80fbedac1cd0e2b1c2d651e9ebb8f93ef872820ac8394494f4f95ee854a7
 
-name:           haskell-twitch-overlay
+name:           pluto
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/chiroptical/haskell-twitch-overlay#readme>
-homepage:       https://github.com/chiroptical/haskell-twitch-overlay#readme
-bug-reports:    https://github.com/chiroptical/haskell-twitch-overlay/issues
+description:    Please see the README on GitHub at <https://github.com/chiroptical/pluto#readme>
+homepage:       https://github.com/chiroptical/pluto#readme
+bug-reports:    https://github.com/chiroptical/pluto/issues
 author:         Barry Moore II
 maintainer:     chiroptical@gmail.com
 copyright:      2020 Barry Moore II
@@ -23,7 +23,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/chiroptical/haskell-twitch-overlay
+  location: https://github.com/chiroptical/pluto
 
 library
   exposed-modules:
@@ -34,7 +34,7 @@ library
       TwitchApi.Helix
       Url
   other-modules:
-      Paths_haskell_twitch_overlay
+      Paths_pluto
   hs-source-dirs:
       src
   build-depends:
@@ -68,10 +68,10 @@ library
     , yamlparse-applicative
   default-language: Haskell2010
 
-executable haskell-twitch-overlay-exe
+executable pluto-exe
   main-is: Main.hs
   other-modules:
-      Paths_haskell_twitch_overlay
+      Paths_pluto
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall
@@ -81,7 +81,6 @@ executable haskell-twitch-overlay-exe
     , beam-core
     , bytestring
     , esqueleto
-    , haskell-twitch-overlay
     , http-client
     , http-client-tls
     , http-media
@@ -93,6 +92,7 @@ executable haskell-twitch-overlay-exe
     , persistent
     , persistent-sqlite
     , persistent-template
+    , pluto
     , random
     , resource-pool
     , servant
@@ -107,11 +107,11 @@ executable haskell-twitch-overlay-exe
     , yamlparse-applicative
   default-language: Haskell2010
 
-test-suite haskell-twitch-overlay-test
+test-suite pluto-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_haskell_twitch_overlay
+      Paths_pluto
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall
@@ -121,7 +121,6 @@ test-suite haskell-twitch-overlay-test
     , beam-core
     , bytestring
     , esqueleto
-    , haskell-twitch-overlay
     , http-client
     , http-client-tls
     , http-media
@@ -133,6 +132,7 @@ test-suite haskell-twitch-overlay-test
     , persistent
     , persistent-sqlite
     , persistent-template
+    , pluto
     , random
     , resource-pool
     , servant

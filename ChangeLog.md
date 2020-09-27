@@ -1,3 +1,3 @@
-# Changelog for haskell-twitch-overlay
+# Changelog for pluto
 
 ## Unreleased changes
